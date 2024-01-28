@@ -22,7 +22,7 @@ import DashboardPatient from "./pages/DashboardPatient";
 import WaitingList from "./components/waitingList/WaitingList";
 
 function App() {
-  // console.log("API Documentation", import.meta.env.VITE_API_URL);
+  // console.log("API Documentation: ", import.meta.env.VITE_API_URL);
   return (
     <>
       <BrowserRouter>
