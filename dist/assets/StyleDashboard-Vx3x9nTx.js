@@ -1,0 +1,7 @@
+import{r,_ as L,u as _,d as f,j as n}from"./index-PgkcB_MP.js";const m=r.lazy(()=>L(()=>import("./DashboardLayout-Xml-5sRA.js"),__vite__mapDeps([0,1,2,3]))),p=({children:i})=>{const[l,h]=r.useState(!1),s=_(),a=f(),d=["dashboard"],R=["booking-list","waiting-list"],k=["doctor","patient","waiting-list"],u=["assistant","waiting-list"],E=["waiting-pay","waiting-list"],o=e=>{const t=location.href.toLowerCase();return e.some(c=>t.includes(c.toLowerCase()))},S=e=>{switch(e){case"ROLE_RECEPTIONIST":o(R)||s("/error-403");break;case"ROLE_DOCTOR":o(k)||s("/error-403");break;case"ROLE_ASSISTANT":o(u)||s("/error-403");break;case"ROLE_CASHIER":o(E)||s("/error-403");break}};return r.useEffect(()=>{var c;const e=localStorage.getItem("token"),t=o(d);!e&&t&&s("/error-401"),S((c=a==null?void 0:a.user)==null?void 0:c.roles)},[]),r.useEffect(()=>{const e=document.createElement("link");e.rel="stylesheet",e.href="/src/assets/css/styles.min.css";const t=()=>{h(!0)};return e.onload=t,document.head.appendChild(e),()=>{document.head.removeChild(e)}},[]),n.jsx(n.Fragment,{children:l&&n.jsx(m,{children:i})})};export{p as default};
+function __vite__mapDeps(indexes) {
+  if (!__vite__mapDeps.viteFileDeps) {
+    __vite__mapDeps.viteFileDeps = ["assets/DashboardLayout-Xml-5sRA.js","assets/index-PgkcB_MP.js","assets/index-20puYr9s.css","assets/customerService-_QoQn0mo.js"]
+  }
+  return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
+}
